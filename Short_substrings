@@ -1,0 +1,17 @@
+import java.util.*;
+public class sol{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n  = sc.nextInt();
+        while(n-->0){
+            String s = sc.next();
+            String str = "";
+            int l = s.length();
+            for(int i =1;i<l-1;i++){
+                str+=s.charAt(i);
+                i+=1;
+            }
+            System.out.println(s.charAt(0)+str+s.charAt(l-1));
+        }
+    }
+}
